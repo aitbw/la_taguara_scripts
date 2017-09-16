@@ -1,6 +1,6 @@
 def mimimi_speak(input)
   input.downcase!
-  translated = input.gsub(/[aeou]/, 'i')
+  translated = input.gsub(/[aeou|áéóú|AEOU|ÁÉÓÚ|]/, 'i')
   puts translated
 end
 
